@@ -9,7 +9,7 @@ habilidad_manager = manager_habilidad ()
 
 router= APIRouter (prefix= "/habilidad" , tags= ["habilidad routes"])
 
-@router.post ("/agegar_habilidad")
+@router.post ("/agregar_habilidad")
 def habilidad_post (Habilidad: habilidad_model , cursor: psycopg.Cursor = Depends (getCursor)):
     return habilidad_manager.agregar_habilidad (Habilidad, cursor)
 
