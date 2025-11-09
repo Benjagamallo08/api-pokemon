@@ -10,10 +10,11 @@ class tipo_model (BaseModel):
 class pokemon_model(BaseModel):
     nombre:str
 
-class  boletin_model (BaseModel):
+class  habilidad_model (BaseModel):
+    habilidad:str
 
-    id_materia: int
-    id_alumno: int
+
+
 
 
 
