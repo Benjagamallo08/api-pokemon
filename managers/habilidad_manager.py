@@ -11,6 +11,6 @@ class manager_habilidad:
        return ("!!habilidad agregada!!")  
      
      def ver_habilidad ( self, cursor:psycopg.Cursor):
-         res = cursor.execute ( "SELECT id_habilidad, habilidad FROM habilidad").fetchall ()
-         return [{"id": row [0], "habilidad":  row[1]} for row in res]
+        res = cursor.execute ( "SELECT id_habilidad, habilidad FROM habilidad").fetchall ()
+        return [{"id": row [0], "habilidad":  row[1]} for row in res]
          
