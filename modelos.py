@@ -14,6 +14,13 @@ class  habilidad_model (BaseModel):
     habilidad:str
 
 
+class pokedex_model (BaseModel):
+    pokemon_id: int
+    tipo_id:int
+    habilidad_id:int
+
+
+
 
 
 
